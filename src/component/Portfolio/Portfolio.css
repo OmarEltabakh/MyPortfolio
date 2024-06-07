@@ -1,0 +1,363 @@
+.portfolio {
+    padding-bottom: 40px;
+    background: #090a0f;
+    overflow: hidden;
+}
+
+.portfolio .tabButton>button {
+    background: #222;
+    border: 2px solid rgb(56, 56, 56);
+    border-radius: 6px;
+    color: white;
+    padding: 6px 15px;
+    z-index: 5;
+
+}
+
+
+/* triangle=========================================> */
+.portfolio .allProjects .cartLeft .triangle {
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 9px solid #161d28;
+    position: absolute;
+    right: -9px;
+}
+
+.portfolio .allProjects .cartRight .triangle {
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-right: 9px solid #161d28;
+    position: absolute;
+    left: -8px;
+}
+
+/* circle============================================> */
+
+.portfolio .allProjects .circle {
+    height: 60px;
+    width: 60px;
+    background-color: #161d28;
+    border-radius: 50%;
+    z-index: 1;
+    top: 5px;
+    left: calc(50% + 2px);
+    transform: translateX(-50%);
+    border: 3px solid #1e40af;
+
+
+
+}
+
+.portfolio .allProjects .cartLeft .date {
+    transform: translateY(-50%);
+    top: 30px;
+    left: 55%;
+
+
+
+}
+
+.portfolio .allProjects .cartRight .date {
+    transform: translateY(-50%);
+    top: 30px;
+    right: 55%;
+
+
+
+}
+
+/* allProjects=======================================> */
+.portfolio .allProjects::after {
+    content: "";
+    width: 4px;
+    height: 100%;
+    background-color: #1e40af;
+    position: absolute;
+    left: 50%;
+    top: 0;
+
+}
+
+.portfolio .allProjects .cartLeft {
+    justify-content: start;
+
+}
+
+.portfolio .allProjects .cartLeft .cart {
+    margin-left: 40px;
+
+}
+
+.portfolio .allProjects .cartRight .cart {
+    margin-right: 40px;
+
+}
+
+.portfolio .allProjects .cartRight {
+    justify-content: end;
+}
+
+
+.portfolio .allProjects .cart {
+    background-color: #0d1118;
+    border-bottom: 4px solid #1e40af;
+    padding: 40px 20px;
+    padding-top: 30px !important;
+    border-radius: 10px;
+    color: white;
+
+}
+
+.portfolio .allProjects .cart .cartImage .layerAndImageParent .layer {
+
+    background-color: rgba(0 0 0 /70%);
+    position: absolute;
+    height: 100% !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: .2s ease-in-out all;
+
+}
+
+.portfolio .allProjects .cart .cartImage .layerAndImageParent:hover .layer {
+    opacity: 1 !important;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* project modal ===================================================> */
+
+
+
+.portfolio .closeIcon:hover {
+    animation: tada 1s;
+
+}
+
+
+
+.portfolio .fixed-width-modal {
+
+    min-width: 70% !important;
+}
+
+
+.portfolio .modal-content {
+    background-color: #0d1118;
+    z-index: 33 !important;
+}
+
+.portfolio .ProjectModalMainContent a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid rgb(56, 56, 56);
+    background: #222;
+    transition: .2s all ease-in-out;
+    position: relative;
+}
+
+.portfolio .ProjectModalMainContent a:hover {
+    transform: scale(1.05);
+
+
+}
+
+.carousel-image {
+    height: 490px !important;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive =======================================================> */
+@media(max-width:1200px) {
+
+    .portfolio .allProjects .cartLeft,
+    .cartRight {
+        justify-content: start !important;
+
+    }
+
+    .portfolio .allProjects .cart {
+        width: 100% !important;
+
+    }
+
+    .portfolio .allProjects::after {
+        left: 20% !important;
+        transform: translateX(-50%);
+
+
+    }
+
+    .portfolio .allProjects .circle {
+        height: 60px;
+        width: 60px;
+        background-color: #161d28;
+        border-radius: 50%;
+        z-index: 1;
+        top: 5px;
+        left: 0 !important;
+        transform: translateX(-50%);
+        border: 3px solid #1e40af;
+
+
+
+    }
+
+    .portfolio .allProjects .cart {
+        margin-left: 60px !important;
+        height: 100% !important;
+
+    }
+
+    .portfolio .allProjects .cartRight .cart {
+        margin-right: 0;
+
+    }
+
+    .portfolio .allProjects .cartLeft .triangle {
+        transform: rotate(180deg);
+        left: -8px !important;
+    }
+
+
+    .portfolio .allProjects .date {
+        display: none !important;
+
+
+
+    }
+
+    .portfolio .allProjects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfolio .allProjects>div {
+        width: 60% !important;
+    }
+
+    .portfolio .myContainer {
+        width: 95% !important;
+    }
+
+}
+
+
+
+@media(max-width:1000px) {
+    .carousel-image {
+        height: fit-content !important;
+        object-fit: cover;
+    }
+
+}
+
+
+
+
+
+@media(max-width:850px) {
+
+    .portfolio .allProjects>div {
+        width: 80% !important;
+    }
+
+    .portfolio .allProjects::after {
+        left: 10% !important;
+        transform: translateX(-50%);
+
+    }
+}
+
+
+
+@media(max-width:480px) {
+    .portfolio .tabButton>button {
+        background: #222;
+        border: 2px solid rgb(56, 56, 56);
+        border-radius: 6px;
+        color: white;
+        padding: 6px 10px;
+        z-index: 5;
+        font-size: 13px;
+
+
+    }
+
+    .portfolio .tabButton {
+        gap: 15px !important;
+
+
+    }
+
+}
+
+@media(max-width:420px) {
+
+    .portfolio .allProjects>div {
+        width: 85% !important;
+    }
+
+    .portfolio .allProjects::after {
+        left: 7.5% !important;
+        transform: translateX(-50%);
+
+    }
+
+    .portfolio .allProjects .cart {
+        margin-left: 45px !important;
+
+        height: 100% !important;
+
+    }
+
+    .portfolio .allProjects .circle {
+        height: 50px;
+        width: 50px;
+        top: 10px;
+
+
+
+
+
+
+    }
+
+}
