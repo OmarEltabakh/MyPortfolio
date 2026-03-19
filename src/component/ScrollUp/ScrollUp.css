@@ -1,0 +1,19 @@
+.scrollUp {
+    width: 40px !important;
+    height: 40px !important;
+    background-color: gold;
+    z-index: 999 !important;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    border-radius: 5px;
+    background-color: #0d1118;
+    position: fixed;
+    border: #1e40af 2px solid;
+    transition: .3s all ease-in;
+}
+
+.scrollUp:hover {
+    transform: scale(1.05);
+
+}

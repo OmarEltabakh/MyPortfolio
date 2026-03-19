@@ -1,0 +1,15 @@
+footer {
+    background-color: #0d1118;
+    position: relative;
+    z-index: 44 !important
+}
+
+
+@media(max-width:600px){
+    footer h5 {
+        font-size: 16px !important;
+    }
+    footer h6{
+        font-size: 14px !important;
+    }
+}

@@ -1,0 +1,121 @@
+.home {
+  height: 100vh;
+  background: #090a0f;
+  overflow: hidden;
+}
+
+/* social media===============================> */
+.home .button {
+  cursor: pointer;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #222;
+  color: #fff;
+  outline: none;
+  overflow: hidden;
+  border: 2px solid rgb(56, 56, 56);
+  font-weight: 600;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+
+
+.home .button::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: linear-gradient(to right,
+      rgb(24, 33, 45),
+      rgb(50, 65, 85),
+      rgb(10, 20, 35));
+
+  left: -15px;
+  bottom: 0;
+  transform: translateY(50%);
+  transition: 0.5s;
+  z-index: -1;
+}
+
+.home .button:hover:before {
+  width: 170px;
+  height: 170px;
+}
+
+/* scrollDownButton===========================> */
+.home .scrollDown {
+  width: 30px !important;
+  height: 50px !important;
+  border: solid 2px #1e40af;
+  border-radius: 20px;
+  transform: translateY(50%);
+}
+
+.home .pointer {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #1e40af !important;
+  top: 5px;
+}
+
+
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px);
+  }
+
+  to {
+    transform: translateY(-2000px);
+  }
+}
+
+
+
+/* responsive===============================> */
+@media(max-width:1000px) {
+  .home .homeAnimation>div {
+    width: 90% !important;
+
+  }
+}
+
+@media(max-width:850px) {
+  .home .homeMainContent {
+    width: 95% !important;
+  }
+}
+
+@media(max-width:768px) {
+
+  .home .homeAnimation>div {
+    width: 70% !important;
+
+  }
+
+  .home .row .col1 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    align-items: center !important;
+  }
+
+  .home .row .homeAnimation {
+    justify-content: center !important;
+
+
+  }
+}
+
+@media(max-width:576px) {
+
+
+  .home .homeAnimation>div {
+    width: 85% !important;
+
+  }
+}

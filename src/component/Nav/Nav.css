@@ -1,0 +1,99 @@
+/* global code===============================================> */
+nav {
+    background-color: #08090b;
+}
+
+nav a {
+    color: white !important;
+}
+
+.transition {
+    transition: .3s ease-in background-color;
+}
+
+/* navMenu==================================================> */
+
+nav .navMenu {
+    background: -webkit-linear-gradient(white, #96aec8);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+/* nav logo=====================================================> */
+nav .logo {
+    background: -webkit-linear-gradient(white, #96aec8);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+/* navitem color transition  ========================================> */
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 1.5px;
+    background-color: #1e40af !important;
+    bottom: -10px;
+    left: 0;
+    transition: .2s all ease-in;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+nav ul li a.activeNavItem::after {
+    width: 100% !important;
+}
+
+nav ul li a {
+    position: relative !important;
+}
+
+.activeNavItem {
+    color: #1e40af !important;
+    transition: .2s all ease-in;
+
+}
+
+.navColorTransimition {
+    background-color: #111720 !important;
+}
+
+
+
+/* navModal================================================> */
+.navModal .modal-content {
+    background: #151d28 !important;
+    color: white !important;
+}
+
+.navModal .closeIcon:hover {
+    animation: tada 1s;
+
+}
+
+.navModal .navModalActiveLink {
+    transition: ease-in color .2s !important;
+    color: #1e40af !important;
+}
+
+
+
+
+/* responsive===============================================> */
+@media(max-width:900px) {
+
+    nav ul {
+        display: none !important;
+    }
+
+    nav .navMenu {
+        display: block !important;
+    }
+}

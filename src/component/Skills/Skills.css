@@ -1,0 +1,22 @@
+.skills {
+    padding-bottom: 140px;
+    background: #090a0f;
+    overflow: hidden !important;
+
+}
+
+
+.skills .skillsMainContent .tilt>div {
+    background-color: #0d1118;
+    padding: 20px 5px;
+    border-radius: 10px;
+    border-bottom: 4px solid #1e40af;
+    cursor: pointer;
+}
+
+@media(max-width :400px) {
+    .skills .skillsMainContent h6 {
+        font-size: 13px;
+
+    }
+}
